@@ -14,7 +14,7 @@ eureka:
 # Messages 
 
 app:
-  environment: default - local env1  
+  environment: default - local env2  
 spring:
     cloud:
       bus:
