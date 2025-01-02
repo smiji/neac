@@ -12,4 +12,4 @@ eureka:
 
 app:
   environment: qa
-
+  
