@@ -10,5 +10,30 @@ eureka:
       #defaultZone : http://${eureka.instance.hostname}:9192/eureka
       defaultZone : http://localhost:9192/eureka
 
+# Add the kafka default configuration for bus enabled
+# Messages 
+
 app:
-  environment: default-local
+  environment: default  
+spring:
+    cloud:
+    stream:
+      kafka:
+        binder:
+          brokers:
+            - http://localhost:9092
+            - http://localhost:9094
+            - http://localhost:9096
+    bus:
+      trace:
+        enabled: true
+      refresh:
+        enabled: true
+      env:
+        enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
