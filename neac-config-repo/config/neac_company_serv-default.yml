@@ -17,20 +17,21 @@ app:
   environment: default  
 spring:
     cloud:
-    stream:
-      kafka:
-        binder:
-          brokers:
-            - http://localhost:9092
-            - http://localhost:9094
-            - http://localhost:9096
-    bus:
-      trace:
-        enabled: true
-      refresh:
-        enabled: true
-      env:
-        enabled: true
+      bus:
+        trace:
+          enabled: true
+        refresh:
+          enabled: true
+        env:
+          enabled: true
+      stream:
+        kafka:
+          binder:
+            brokers:
+              - http://localhost:9092
+              - http://localhost:9094
+              - http://localhost:9096
+
 
 management:
   endpoints:
