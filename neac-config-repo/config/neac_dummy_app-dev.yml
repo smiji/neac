@@ -4,6 +4,7 @@ server:
 dummy:
   app:
     test:
-      prop: SMIJI SKARIAH JOHN
+      prop: SMIJI SKARIAH JOHN, ANNAMMA JOHN
       
+
 
